@@ -1,0 +1,48 @@
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            padding: 40px;
+        }
+
+        .project {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        input {
+            padding: 8px;
+            width: 60%;
+        }
+
+        button {
+            padding: 8px 14px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .pokedex-card {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f8fafc;
+        }
+
+        .pokedex-card img {
+            width: 150px;
+        }
+
+        .type-badge {
+            display: inline-block;
+            padding: 6px 10px;
+            margin: 5px;
+            border-radius: 20px;
+            background: #e0e7ff;
+            font-size: 12px;
+        }
+    </style>
