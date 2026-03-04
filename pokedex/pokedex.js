@@ -1,3 +1,13 @@
+    window.onload = () => {
+
+    setTimeout(() => {
+
+        document.getElementById("boot").style.display = "none";
+        document.getElementById("app").style.display = "block";
+
+    }, 2000);
+
+};
     const beep = new Audio("https://actions.google.com/sounds/v1/alarms/beep_short.ogg");async function searchPokemon() {
     const name = document.getElementById("pokemonInput").value.toLowerCase();
     const card = document.getElementById("pokedexCard");

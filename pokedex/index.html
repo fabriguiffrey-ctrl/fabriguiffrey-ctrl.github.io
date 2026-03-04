@@ -13,13 +13,53 @@
 
 <body>
 
-<div class="project">
-    <h3>Mini Pokédex</h3>
+<div class="gameboy">
 
-    <input type="text" id="pokemonInput" placeholder="Ej: pikachu" />
-    <button onclick="searchPokemon()">Buscar</button>
+    <div class="screen-area">
 
-    <div id="pokedexCard" class="pokedexCard"></div>
+        <div class="screen-header">
+            DOT MATRIX WITH STEREO SOUND
+        </div>
+
+        <div class="screen">
+
+            <div class="boot" id="boot">
+                <p>POKÉDEX OS v1.0</p>
+                <p>LOADING...</p>
+            </div>
+
+            <div id="app" style="display:none;">
+
+                <h3>POKEDEX</h3>
+
+                <input type="text" id="pokemonInput" placeholder="pikachu">
+                <button onclick="searchPokemon()">SEARCH</button>
+
+                <div id="pokedexCard" class="pokedex-card"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="controls">
+
+        <div class="dpad">
+            <div class="up"></div>
+            <div class="down"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="center"></div>
+        </div>
+
+        <div class="buttons">
+            <div class="btnA">A</div>
+            <div class="btnB">B</div>
+        </div>
+
+    </div>
+
 </div>
 
 <script src="pokedex.js"></script>
