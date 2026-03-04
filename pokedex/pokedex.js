@@ -24,7 +24,7 @@
 <script>
 async function searchPokemon() {
     const name = document.getElementById("pokemonInput").value.toLowerCase();
-    const card = document.getElementById("pokedexCard");
+    const card = document.getElementById("pokedex-card");
 
     if (!name) {
         card.innerHTML = "<p>Por favor ingresá un nombre.</p>";
