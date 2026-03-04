@@ -7,10 +7,10 @@ body {
         .project {
             max-width: 500px;
             margin: auto;
-            background: white;
+            background: rgb(116, 62, 62);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(66, 19, 136, 0.08);
+            box-shadow: 0 4px 10px rgba(76, 40, 130, 0.08);
             text-align: center;
         }
 
@@ -29,7 +29,7 @@ body {
             margin-top: 20px;
             padding: 20px;
             border-radius: 10px;
-            background: #f8fafc;
+            background: #2a3139;
         }
 
         .pokedex-card img {
@@ -41,6 +41,6 @@ body {
             padding: 6px 10px;
             margin: 5px;
             border-radius: 20px;
-            background: #e0e7ff;
+            background: #2a3139;
             font-size: 12px;
         }
