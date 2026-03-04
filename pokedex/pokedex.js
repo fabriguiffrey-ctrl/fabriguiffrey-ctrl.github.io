@@ -1,4 +1,4 @@
-    async function searchPokemon() {
+    const beep = new Audio("https://actions.google.com/sounds/v1/alarms/beep_short.ogg");async function searchPokemon() {
     const name = document.getElementById("pokemonInput").value.toLowerCase();
     const card = document.getElementById("pokedexCard");
 
@@ -22,7 +22,7 @@
 
         card.innerHTML = `
             <h2>#${data.id} - ${data.name.toUpperCase()}</h2>
-            <img src="${data.sprites.other['official-artwork'].front_default}" />
+            <img src="${data.sprites.front_default}" />
             <p><strong>Altura:</strong> ${data.height}</p>
             <p><strong>Peso:</strong> ${data.weight}</p>
             <div>${types}</div>
