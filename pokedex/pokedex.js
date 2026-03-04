@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Pokédex</title>
-    <link rel="stylesheet" href="styles.css">
-
-    
-</head>
-
-<body>
-
-<div class="project">
-    <h3>Mini Pokédex</h3>
-
-    <input type="text" id="pokemonInput" placeholder="Ej: pikachu" />
-    <button onclick="searchPokemon()">Buscar</button>
-
-    <div id="pokedex-card" class="pokedex-card"></div>
-</div>
-
-<script>
-async function searchPokemon() {
+    async function searchPokemon() {
     const name = document.getElementById("pokemonInput").value.toLowerCase();
     const card = document.getElementById("pokedex-card");
 
@@ -55,8 +31,4 @@ async function searchPokemon() {
     } catch (error) {
         card.innerHTML = "<p>Pokémon no encontrado 😢</p>";
     }
-}
-</script>
-
-</body>
-</html>
+    }
