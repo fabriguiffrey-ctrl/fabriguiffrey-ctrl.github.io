@@ -1,141 +1,274 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Fabricio Guiffrey | Backend Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<title>Fabricio Guiffrey | Backend Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            background-color: #1f2937;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+<style>
 
-        h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .project {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        }
+body{
+    font-family:'Inter',sans-serif;
+    background:#0f172a;
+    color:#e2e8f0;
+    line-height:1.6;
+}
 
-        .project h3 {
-            margin-top: 0;
-        }
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 8px 14px;
-            margin-right: 10px;
-            margin-top: 10px;
-            background-color: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-        }
+/* HEADER */
 
-        .btn:hover {
-            background-color: #1d4ed8;
-        }
+header{
+    text-align:center;
+    padding:80px 20px;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #111827;
-            color: white;
-            margin-top: 40px;
-        }
-    </style>
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+    color:#94a3b8;
+}
+
+.buttons{
+    margin-top:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 16px;
+    margin:5px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:14px;
+    transition:0.2s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* SECTIONS */
+
+section{
+    margin-top:60px;
+}
+
+section h2{
+    font-size:26px;
+    margin-bottom:25px;
+    border-left:4px solid #38bdf8;
+    padding-left:12px;
+}
+
+/* ABOUT */
+
+.about{
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
+}
+
+/* PROJECTS */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
+    transition:0.2s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+}
+
+.project h3{
+    margin-bottom:10px;
+}
+
+.tech{
+    font-size:14px;
+    color:#94a3b8;
+    margin-top:10px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+    color:#94a3b8;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Fabricio Guiffrey</h1>
-    <p>Backend Developer | FastAPI | PostgreSQL | APIs REST</p>
-    <a class="btn" href="https://github.com/fabriguiffrey-ctrl" target="_blank">Ver GitHub</a>
-    <a class="btn" href="cv.html" target="_blank">Ver GitHub</a>
-    <a class="btn" href="meter un link" target="_blank">en construcción</a>
-    <a class="btn" href="meter un link" target="_blank">en construcción</a>
+
+<h1>Fabricio Guiffrey</h1>
+<p>Backend Developer | FastAPI | PostgreSQL | REST APIs</p>
+
+<div class="buttons">
+
+<a class="btn" href="https://github.com/fabriguiffrey-ctrl" target="_blank">GitHub</a>
+
+<a class="btn" href="cv.html" target="_blank">Ver CV</a>
+
+<a class="btn" href="#">LinkedIn</a>
+
+</div>
+
 </header>
 
-<section>
-    <h2>Sobre mí</h2>
-    <p>
-        Desarrollador backend enfocado en la creación de APIs REST escalables,
-        sistemas con autenticación y bases de datos relacionales.
-        Experiencia en proyectos propios orientados a soluciones reales.
-    </p>
-</section>
+<div class="container">
 
 <section>
-    <h2>Proyectos</h2>
 
-    <div class="project">
-        <h3>Medicore - Sistema Veterinario</h3>
-        <p>
-            Aplicación web con autenticación de usuarios, registro de mascotas,
-            gestión de tratamientos y base de datos relacional.
-        </p>
-        <p><strong>Tecnologías:</strong> FastAPI, PostgreSQL, HTML, CSS</p>
-        <a class="btn" href="#" target="_blank">Ver Demo</a>
-        <a class="btn" href="#" target="_blank">Repositorio</a>
-    </div>
+<h2>Sobre mí</h2>
 
-    <div class="project">
-        <h3>API de Gestión de Servicios</h3>
-        <p>
-            API REST con autenticación JWT, manejo de usuarios y control de roles.
-            Arquitectura modular preparada para escalar.
-        </p>
-        <p><strong>Tecnologías:</strong> FastAPI, SQLAlchemy, PostgreSQL</p>
-        <a class="btn" href="#" target="_blank">Ver Demo</a>
-        <a class="btn" href="#" target="_blank">Repositorio</a>
-    </div>
+<div class="about">
 
-    <div class="project">
-    <h3>Mini Pokédex - Consumo de API REST</h3>
-    <p>
-        Aplicación frontend que consume la API pública PokéAPI usando JavaScript.
-        Renderizado dinámico y manejo de asincronía.
-    </p>
-    <p><strong>Tecnologías:</strong> HTML5, CSS3, JavaScript (ES6), Fetch API, consumo de REST API externa.</p>
+<p>
+Desarrollador backend enfocado en la creación de APIs REST escalables y
+sistemas con autenticación y bases de datos relacionales.
+</p>
 
-    <a href="pokedex/index.html" class="btn">Ver Demo</a>
+<p style="margin-top:10px;">
+Me interesa especialmente el diseño de arquitectura clara, código mantenible
+y soluciones orientadas a problemas reales.
+</p>
 
 </div>
 
 </section>
 
+
 <section>
-    <h2>Contacto</h2>
-    <p>Email: tuemail@email.com</p>
-    <p>LinkedIn: <a href="#" target="_blank">Tu Perfil</a></p>
+
+<h2>Proyectos</h2>
+
+<div class="projects-grid">
+
+<div class="project">
+
+<h3>Medicore — Sistema Veterinario</h3>
+
+<p>
+Aplicación web con autenticación de usuarios, registro de mascotas,
+gestión de tratamientos y base de datos relacional.
+</p>
+
+<p class="tech">
+FastAPI · PostgreSQL · HTML · CSS
+</p>
+
+<a class="btn" href="#">Demo</a>
+<a class="btn" href="#">Repositorio</a>
+
+</div>
+
+
+<div class="project">
+
+<h3>API Gestión de Servicios</h3>
+
+<p>
+API REST con autenticación JWT, manejo de usuarios y control de roles.
+Arquitectura modular preparada para escalar.
+</p>
+
+<p class="tech">
+FastAPI · SQLAlchemy · PostgreSQL
+</p>
+
+<a class="btn" href="#">Demo</a>
+<a class="btn" href="#">Repositorio</a>
+
+</div>
+
+
+<div class="project">
+
+<h3>Mini Pokédex</h3>
+
+<p>
+Aplicación frontend que consume una API externa y renderiza datos
+dinámicamente utilizando JavaScript.
+</p>
+
+<p class="tech">
+HTML · CSS · JavaScript · Fetch API
+</p>
+
+<a class="btn" href="pokedex/index.html">Ver Demo</a>
+
+</div>
+
+</div>
+
 </section>
 
+
+<section>
+
+<h2>Contacto</h2>
+
+<div class="contact">
+
+<p>Email: <a href="mailto:fabriguiffrey@gmail.com">fabriguiffrey@gmail.com</a></p>
+
+<p>LinkedIn:
+<a href="https://www.linkedin.com/in/fabriguiffrey/" target="_blank">
+linkedin.com/in/fabriguiffrey
+</a>
+</p>
+
+</div>
+
+</section>
+
+</div>
+
 <footer>
-    © 2026 - Fabricio Guiffrey
+
+© 2026 — Fabricio Guiffrey
+
 </footer>
 
 </body>
